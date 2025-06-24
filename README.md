@@ -3,7 +3,7 @@
 ## nexus-cli 新手帮助
 
 - 方便的话请给一个github的Star，谢谢。
-
+- 运行nexus-cli，至少知道怎么在终端运行命令，否则建议使用网页版贡献算力。
 - 可以先看一下[网页版说明](./nexus-web.md)，了解基本操作。nexus-cli 测试网3，增加了积分换Token功能。
 
 ## 一、快速安装
@@ -227,5 +227,4 @@ chmod +x nexus-network
 ./nexus-network start --node-id 7000002 # 这个值是Web端节点管理的那个7位数字
 ```
 
-
-
+注：启动多个节点时，如果需要在后台运行，可以使用tmux或者nohup，这里不作详细介绍。
