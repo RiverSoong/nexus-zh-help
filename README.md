@@ -233,3 +233,34 @@ chmod +x nexus-network
 ```
 
 注：启动多个节点时，如果需要在后台运行，可以使用tmux或者nohup，这里不作详细介绍。
+
+## 四、软件更新升级
+
+### 4.1 更新说明
+
+- 2025-06-05 软件从0.8.11升级到了0.8.12
+- 升级有两种方式，1是重新安装，参考上面的安装步骤，2是下载二进制文件，替换掉你电脑上的二进制文件。
+- 请参考1.3从github下载最新的二进制文件
+
+### 4.2 替换二进制文件步骤
+
+```bash
+# 查找你原先的二进制文件
+whereis nexus-network
+
+# 假设查找到的结果是
+/Users/lily/nexus/nexus-cli/clients/cli/target/release/nexus-network
+
+# 将你下载的文件，替换掉二进制文件
+# 左边是你下载的文件，右边是原先的旧文件
+mv /Users/lily/Downloads/nexus-network-macos-arm64 /Users/lily/nexus/nexus-cli/clients/cli/target/release/nexus-network
+
+# 为文件增加可执行权限
+chmod +x /Users/lily/nexus/nexus-cli/clients/cli/target/release/nexus-network
+
+# 检查是否更新成功
+/Users/lily/nexus/nexus-cli/clients/cli/target/release/nexus-network --version
+```
+
+
+
